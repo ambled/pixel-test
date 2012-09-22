@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <title>RedGreenBlue</title>
+  <meta name="description" content="ColorTest" />
+  <meta name="author" content="ambled" />
+
+  <script>
+  window.onload = function() {
+    var colors = new Array('black','white','black','white','red', 'green', 'blue');
+    var index = 0;
+    setInterval(function() {
+      if (index == colors.length ) {
+        index = 0;
+      } 
+      document.body.style.backgroundColor = colors[index];
+      index++;
+    }, 1000);
+  }
+</script>
+
+</head>
+<body>
+  <div>
+    <header>
+      <h1>PixelTest</h1>
+    </header>
+    <nav>
+      <p><a href="http://blog.bitabbot.com">Home</a></p>
+    </nav>
+
+    <div>
+     This screen should cycle black, white, black, white, red, green, blue. 
+    </div>
+    <div>
+     Now please fill out this short <a href="http://www.surveymonkey.com/s/7RYW5HW">Visibility Report</a> on SurveyMonkey.com.
+    </div>
+
+    <footer>
+     <p>&copy; Copyright 2012 by BitAbbot</p>
+    </footer>
+  </div>
+</body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34839222-2']);
+  _gaq.push(['_setDomainName', 'bitabbot.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
